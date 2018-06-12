@@ -1,5 +1,6 @@
 package com.personal.tools.permissionold;
 
+import android.Manifest;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -10,6 +11,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        //checkSelfPermission();
+        //Manifest.permission.WRITE_CALENDAR;
     }
 
     @Override
