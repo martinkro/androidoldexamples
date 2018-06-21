@@ -9,8 +9,36 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_hello"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="@string/hello_world" />
+    <Button 
+        android:id="@+id/testStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_hello"
+        android:text="@string/test_storage"
+        />
+     <Button 
+        android:id="@+id/testCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/testStorage"
+        android:text="@string/test_camera"
+        />
+     
+     <ImageView  
+        android:contentDescription="@string/content_description"
+        android:id="@+id/imagePhoto"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:layout_below="@id/testCamera"  
+        android:layout_alignParentBottom="true"  
+        android:src="@drawable/ic_launcher" >  
+    </ImageView>  
 
 </RelativeLayout>
